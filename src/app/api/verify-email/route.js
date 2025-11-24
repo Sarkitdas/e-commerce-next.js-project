@@ -33,10 +33,7 @@ export async function GET(req) {
       { _id: user._id },
       {
         $set: { isVerified: true },
-        $unset: {
-          verificationToken: "",
-          createdAt: "", // ⬅️ ADD THIS LINE
-        },
+        $unset: { verificationToken: "", expiry: "",createdAt:"" }, // stops TTL deletion
       }
     );
 

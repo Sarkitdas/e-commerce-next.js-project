@@ -32,7 +32,7 @@ export async function POST(req) {
       password: body.password,
       isVerified: false,
       verificationToken,
-      createdAt: new Date(), // TTL starts counting now
+      createdAt: new Date(),
     });
 
     // Send verification email
@@ -56,10 +56,12 @@ export async function POST(req) {
     });
 
     return NextResponse.json(
-      { message: "Signup successful! Verification email sent.", status: "success" },
+      {
+        message: "Signup successful! Verification email sent.",
+        status: "success",
+      },
       { status: 201 }
     );
-
   } catch (error) {
     return NextResponse.json(
       { message: "Adding failed", status: "error", error: error.message },
