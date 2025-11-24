@@ -51,7 +51,7 @@ export async function POST(req) {
       to: body.email,
       subject: "Verify Your Email",
       html: `<h3>Email Verification</h3>
-             <p>Please click the link below to verify your email before 15 minutes:</p>
+             <p>Please click the link below to verify your email before 1 minutes:</p>
              <a href="${verifyURL}" target="_blank">${verifyURL}</a>`,
     });
 
