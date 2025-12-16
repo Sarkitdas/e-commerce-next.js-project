@@ -32,7 +32,8 @@ export async function POST(req) {
       password: body.password,
       isVerified: false,
       verificationToken,
-      createdAt: new Date(),
+      createdAt: new Date(), // current UTC
+      expireAt: new Date(new Date().getTime() + 3*60*1000), 
     });
 
     // Send verification email
