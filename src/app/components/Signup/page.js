@@ -137,7 +137,7 @@ const Page = () => {
                   <input
                     type="text" name="name" placeholder="Saikat" required
                     value={formData.name} onChange={handleChange}
-                    className="w-full pl-11 pr-4 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all"
+                    className="w-full pl-11 pr-4 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all text-gray-900 opacity-100 font-medium"
                   />
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Page = () => {
                   <input
                     type="text" name="address" placeholder="Madhabpur, City" required
                     value={formData.address} onChange={handleChange}
-                    className="w-full pl-11 pr-4 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all"
+                    className="w-full pl-11 pr-4 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all text-gray-900 opacity-100 font-medium"
                   />
                 </div>
               </div>
@@ -167,7 +167,7 @@ const Page = () => {
                   <input
                     type="email" name="email" placeholder="you@example.com" required
                     value={formData.email} onChange={handleChange}
-                    className="w-full pl-11 pr-4 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all"
+                    className="w-full pl-11 pr-4 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all text-gray-900 opacity-100 font-medium"
                   />
                 </div>
               </div>
@@ -183,7 +183,7 @@ const Page = () => {
                     <input
                       type={showPass ? "text" : "password"} name="password" placeholder="••••••••" required
                       value={formData.password} onChange={handleChange}
-                      className="w-full pl-11 pr-11 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all"
+                      className="w-full pl-11 pr-11 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all text-gray-900 opacity-100 font-medium"
                     />
                     <button 
                       type="button" onClick={() => setShowPass(!showPass)}
@@ -203,7 +203,7 @@ const Page = () => {
                     <input
                       type={showPass ? "text" : "password"} name="confirmPassword" placeholder="••••••••" required
                       value={formData.confirmPassword} onChange={handleChange}
-                      className="w-full pl-11 pr-4 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all"
+                      className="w-full pl-11 pr-4 py-3.5 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 transition-all text-gray-900 opacity-100 font-medium"
                     />
                   </div>
                 </div>
