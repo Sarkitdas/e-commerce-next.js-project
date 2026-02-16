@@ -131,9 +131,9 @@ const Page = () => {
             <div className="space-y-5">
               {/* Email Section */}
               <div className="space-y-1.5">
-                <label className="text-xs font-black text-gray-900 uppercase ml-1 tracking-widest">Email Address</label>
+                <label className="text-xs font-black text-gray-400 uppercase ml-1 tracking-widest">Email Address</label>
                 <div className="relative group">
-                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-indigo-600 transition-colors">
+                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-900 group-focus-within:text-indigo-600 transition-colors">
                     <Mail size={18} />
                   </div>
                   <input
@@ -153,7 +153,7 @@ const Page = () => {
               <div className="space-y-1.5">
                 <label className="text-xs font-black text-gray-400 uppercase ml-1 tracking-widest">Password</label>
                 <div className="relative group">
-                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-indigo-600 transition-colors">
+                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-900 group-focus-within:text-indigo-600 transition-colors">
                     <Lock size={18} />
                   </div>
                   <input
@@ -164,7 +164,7 @@ const Page = () => {
                     value={formData.password}
                     onChange={handleChange}
                     autoComplete="current-password"
-                    className="w-full pl-11 pr-12 py-4 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-600/10 focus:border-indigo-600 focus:bg-white transition-all outline-none"
+                    className="w-full pl-11 pr-12 py-4 bg-gray-50/50 border border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-indigo-600/10 focus:border-indigo-600 focus:bg-white transition-all outline-none text-gray-900 opacity-100 font-medium"
                   />
                   <button 
                     type="button" 
