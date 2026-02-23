@@ -110,15 +110,9 @@ const Page = () => {
               <div className="mt-10 grid grid-cols-2 gap-4">
                 <button 
                    onClick={() => router.push("/components/Order")}
-                   className="flex items-center justify-center gap-2 py-4 px-6 bg-gray-50 text-gray-700 rounded-2xl font-bold text-sm hover:bg-gray-100 transition-all active:scale-95"
+                   className="flex items-center justify-center gap-2 py-4 px-6 bg-gray-100 text-rose-700 rounded-2xl font-bold text-sm hover:bg-gray-150 transition-all active:scale-95"
                 >
                   My Orders <ChevronRight size={16} />
-                </button>
-                <button 
-                  onClick={handleLogout}
-                  className="flex items-center justify-center gap-2 py-4 px-6 bg-rose-50 text-rose-600 rounded-2xl font-bold text-sm hover:bg-rose-100 transition-all active:scale-95"
-                >
-                  <LogOut size={18} /> Logout
                 </button>
               </div>
             </div>
